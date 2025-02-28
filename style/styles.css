@@ -1,0 +1,135 @@
+
+/* esto es un comentario en CSS */
+
+/*  */
+
+/* En las siguientes líneas de código establecemos el formato con CSS a los elementos por su nombre. */
+
+h1, h2, p {
+    text-align: center;
+}
+
+
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 14px;
+}
+
+/* CON LAS PROXIMAS LÍNEAS DE CÓDIGO SE MODIFICO EL COLOR DEL TEXTO DEL LINK, DE AZUL (PREDETERMINADO) A NEGRO. */
+
+footer a {
+    color: black;
+}
+
+
+/* SE UTILIZA AL PSEUDO SELECTOR a:visited PARA MODIFICAR EL COLOR DEL LINNK QUE SE ENCUENTRA EN EL FOOTER. */
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color:  brown;
+}
+
+/* En las siguientes líneas de codigo establecemos la configuración por medio del id de los objetos que establecimos con anterioridad.  */
+
+
+/*  Comentamos todo está línea de código por que en el paso 26 lo reemplazamos a "#menu" por ".menu"
+    La diferencia entre estas dos formas de realizar la misma tarea es que la primera relaciona la configuración por medio del id, en cambio ".menu" es si establecemos una clase denominada "menu".
+#menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+} */ 
+
+
+/* DISEÑO DE CLASES */
+
+/* Clase menu - PASO 27 */
+
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    /* Estas dos líneas de código sirven para centrar los elementos en el eje x. */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+}
+
+/* PASO 28: background-image */
+
+
+/* Agregue en la clase flavor y price widht: 50% para que ocupen el 50 % del ancho del contenedor para poder alinearlos. 
+    Tambien agregue ahora la clase dessert para que tome el mismo formato alineado entre los párrafos y ahorrarme líneas de código. */
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* Con esta línea de código establezco un formato a todos los párrafos de las clases "item" */
+
+.item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.established {
+    font-style: italic;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
